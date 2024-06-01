@@ -16,7 +16,7 @@ public class Main {
         });
 
         // Prints specific animal.
-        String sheep = animals.getElement(0, 2);
+        String sheep = animals.getElement(0, 2, 0);
         System.out.println(sheep);
 
         System.out.println("------------------------------");
@@ -27,13 +27,13 @@ public class Main {
         System.out.println("------------------------------");
 
         // Replaces the cow element with a dog.
-        animals.replaceElement(0, 0, "dog");
+        animals.replaceElement(0, 0, 0, "dog");
         animals.printAllElements();
 
         System.out.println("------------------------------");
 
         // Swaps the dog with the pig.
-        animals.swapElements(0, 0, 0, 1);
+        animals.swapElements(0, 0, 0, 0, 1, 0);
         animals.printAllElements();
 
         System.out.println("------------------------------");
