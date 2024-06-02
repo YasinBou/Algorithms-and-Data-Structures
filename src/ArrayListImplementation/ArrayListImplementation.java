@@ -27,7 +27,8 @@ public class ArrayListImplementation {
             for (int i = 0; i < array.length; i++) {
                 increasedArray[i] = array[i];
             }
-            // Array now has the same elements and an increased size.
+            // Array now has the same elements (including the one that has been newly added)
+            // and an increase in size.
             array = increasedArray;
         }
     }
