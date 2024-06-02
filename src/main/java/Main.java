@@ -1,4 +1,4 @@
-import MultiDimensionalArray.MultiDimensionalArrayHelpers;
+import multiDimensionalArray.MultiDimensionalArrayHelpers;
 
 /**
  * @author YasinBou on GitHub.

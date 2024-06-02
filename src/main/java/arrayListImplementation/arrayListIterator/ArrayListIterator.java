@@ -1,4 +1,4 @@
-package ArrayListImplementation.ArrayListIterator;
+package arrayListImplementation.arrayListIterator;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;

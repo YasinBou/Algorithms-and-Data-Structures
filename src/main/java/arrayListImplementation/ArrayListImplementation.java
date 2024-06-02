@@ -1,6 +1,6 @@
-package ArrayListImplementation;
+package arrayListImplementation;
 
-import ArrayListImplementation.ArrayListIterator.ArrayListIterator;
+import arrayListImplementation.arrayListIterator.ArrayListIterator;
 import java.util.Iterator;
 
 /**

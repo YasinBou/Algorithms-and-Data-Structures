@@ -1,4 +1,4 @@
-package MultiDimensionalArray;
+package multiDimensionalArray;
 
 /**
  * @author YasinBou on GitHub.
