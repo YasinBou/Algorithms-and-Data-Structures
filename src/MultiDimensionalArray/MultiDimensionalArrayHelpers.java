@@ -28,9 +28,9 @@ public class MultiDimensionalArrayHelpers<T> {
     /**
      * Will replace an element within the specified index.
      *
-     * @param x       Horizontal axis.
-     * @param y       Vertical axis.
-     * @param z       Depth axis.
+     * @param x Horizontal axis.
+     * @param y Vertical axis.
+     * @param z Depth axis.
      * @param element The new element to be placed at the specified coordinates.
      * @return
      */
