@@ -1,6 +1,5 @@
 /**
  * @author YasinBou on GitHub.
- * <p>
  * The goal of this application is to practise Algorithms and Data Structures.
  */
 public class Main {
@@ -9,7 +8,7 @@ public class Main {
     }
 
     private static void multiDimensionalArrayOutput() {
-        MultiDimensionalArraysPractise<String> animals = new MultiDimensionalArraysPractise<>(new String[][][]{
+        MultiDimensionalArrayHelpers<String> animals = new MultiDimensionalArrayHelpers<>(new String[][][]{
                 {{"cow"}, {"pig"}, {"sheep"}, {"chicken"}},
                 {{"horse"}, {"goat"}, {"cow"}, {"sheep"}},
                 {{"pig"}, {"chicken"}, {"goat"}, {"horse"}}
@@ -37,5 +36,6 @@ public class Main {
         animals.printAllElements();
 
         System.out.println("------------------------------");
+        animals.printAllElementsInReverse();
     }
 }
