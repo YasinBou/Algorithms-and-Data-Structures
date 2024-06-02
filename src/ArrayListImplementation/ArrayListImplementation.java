@@ -23,11 +23,11 @@ public class ArrayListImplementation {
         if (size == array.length) {
             // Create new array that is double in size (previousSize * 2).
             String[] increasedArray = new String[array.length * 2];
-            // Adds all elements from our old array into our increasedArray.
+            // Adds all elements from our previous array into our increasedArray.
             for (int i = 0; i < array.length; i++) {
                 increasedArray[i] = array[i];
             }
-            // Array now has the same elements (including the one that has been newly added)
+            // Array now has the same elements (including the one that has been newly added),
             // and an increase in size.
             array = increasedArray;
         }
