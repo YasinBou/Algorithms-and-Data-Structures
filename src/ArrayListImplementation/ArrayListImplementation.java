@@ -32,4 +32,22 @@ public class ArrayListImplementation {
             array = increasedArray;
         }
     }
+
+    /**
+     * This method allows items to be removed from the ArrayList.
+     * It wil also fix the positions now that an element has been removed.
+     * @param index index of the element to be removed.
+     */
+    public void remove(int index) {
+        // Validating indices.
+        if (index >= 0 && index < size) {
+            // Loops through the array from the specified index position
+            // and replaces the element at the current index with the element after it (i + 1).
+            for (int i = index; i < size - 1; i++) {
+                array[i] = array[i + 1];
+            }
+            // Decrease array size because the element has been removed.
+            size--;
+        }
+    }
 }
