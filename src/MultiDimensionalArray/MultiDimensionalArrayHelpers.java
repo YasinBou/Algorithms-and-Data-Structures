@@ -1,3 +1,5 @@
+package MultiDimensionalArray;
+
 /**
  * @author YasinBou on GitHub.
  * This class contains helper methods for multidimensional arrays.

@@ -1,3 +1,5 @@
+import MultiDimensionalArray.MultiDimensionalArrayHelpers;
+
 /**
  * @author YasinBou on GitHub.
  * The goal of this application is to practise Algorithms and Data Structures.
@@ -36,6 +38,7 @@ public class Main {
         animals.printAllElements();
 
         System.out.println("------------------------------");
+        // Print elements in reverse.
         animals.printAllElementsInReverse();
     }
 }
