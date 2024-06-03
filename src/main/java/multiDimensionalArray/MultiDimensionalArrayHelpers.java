@@ -78,28 +78,40 @@ public class MultiDimensionalArrayHelpers<T> {
     }
 
     /**
-     * Prints out all the elements inside the multidimensional array in order.
+     * Returns all the elements inside the multidimensional array in order.
      */
-    public void printAllElements() {
+    public String getAllElementsAsString() {
+        StringBuilder elements = new StringBuilder();
         for (int x = 0; x < this.multiDimensionalArray.length; x++) {
             for (int y = 0; y < this.multiDimensionalArray[x].length; y++) {
                 for (int z = 0; z < this.multiDimensionalArray[x][y].length; z++) {
-                    System.out.println("Element at (" + x + ", " + y + ", " + z + "): " + this.getElement(x, y, z));
+                    elements.append("Element at (")
+                            .append(x).append(", ")
+                            .append(y).append(", ")
+                            .append(z).append("): ")
+                            .append(this.getElement(x, y, z)).append("\n");
                 }
             }
         }
+        return elements.toString().trim();
     }
 
     /**
-     * Prints out all the elements inside the multidimensional array in reverse.
+     * Returns all the elements inside the multidimensional array in reverse.
      */
-    public void printAllElementsInReverse() {
+    public String getAllElementsInReverseAsString() {
+        StringBuilder elements = new StringBuilder();
         for (int x = this.multiDimensionalArray.length - 1; x >= 0; x--) {
             for (int y = this.multiDimensionalArray[x].length - 1; y >= 0; y--) {
                 for (int z = this.multiDimensionalArray[x][y].length - 1; z >= 0; z--) {
-                    System.out.println("Element at (" + x + ", " + y + ", " + z + "): " + this.getElement(x, y, z));
+                    elements.append("Element at (")
+                            .append(x).append(", ")
+                            .append(y).append(", ")
+                            .append(z).append("): ")
+                            .append(this.getElement(x, y, z)).append("\n");
                 }
             }
         }
+        return elements.toString().trim();
     }
 }
