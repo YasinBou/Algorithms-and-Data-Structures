@@ -10,7 +10,7 @@ public class MultiDimensionalArrayTests {
             {{"cow"}, {"pig"}, {"sheep"}, {"chicken"}},
             {{"horse"}, {"goat"}, {"cow"}, {"sheep"}},
             {{"pig"}, {"chicken"}, {"goat"}, {"horse"}}
-    });;
+    });
 
     @Test
     public void test_getElementById() {
@@ -42,7 +42,7 @@ public class MultiDimensionalArrayTests {
         Assertions.assertEquals("cow", cow);
         Assertions.assertEquals("horse", horse);
 
-        // Swapping them.
+        // Swapping the cow with the horse.
         this.animals.swapElements(0, 0, 0, 2, 3, 0);
 
         // Cow previously, it's a horse now.
