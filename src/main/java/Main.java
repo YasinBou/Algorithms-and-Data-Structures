@@ -27,5 +27,7 @@ public class Main {
         undergraduate.getEmail();
         undergraduate.getGpa();
         undergraduate.getYear();
+
+        // Abstraction is displayed by using interfaces and abstract classes within the Cat and Dog ojects.
     }
 }
