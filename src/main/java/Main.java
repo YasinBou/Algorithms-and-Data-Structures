@@ -1,6 +1,8 @@
 import OOP.Person;
 import OOP.Student;
 import OOP.Undergraduate;
+import Sorting.Sorting;
+import searchAlgorithms.SearchAlgorithms;
 
 /**
  * @author YasinBou on GitHub.
@@ -9,7 +11,12 @@ import OOP.Undergraduate;
 
 public class Main {
     public static void main(String[] args) {
-        OOP();
+        searchAlgorithms();
+    }
+
+    private static void searchAlgorithms() {
+        int[] sortedList = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        System.out.println(SearchAlgorithms.binarySearch(sortedList, 4));
     }
 
     private static void OOP() {
@@ -29,5 +36,9 @@ public class Main {
         undergraduate.getYear();
 
         // Abstraction is displayed by using interfaces and abstract classes within the Cat and Dog ojects.
+    }
+
+    private static void sorting() {
+        Sorting.sort();
     }
 }
